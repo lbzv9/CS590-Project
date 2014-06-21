@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="#000000">
+     
+    
+    <TextView android:text="Settings"
+        android:textStyle="italic"
+        android:textColor="#FFBA11"
+        android:textSize="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        />
+    
+        <LinearLayout android:gravity="center_vertical" 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:id="@+id/test">
+
+            
+            <TextView android:text="Turn Method"
+	        android:textColor="#cccccc"
+	        android:textSize="30dp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        />
+            
+             <LinearLayout android:gravity="center_vertical" 
+                 android:layout_marginLeft="15dp"
+                 android:layout_marginRight="15dp"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:weightSum="1">
+	        
+	            <ToggleButton
+	                android:id="@+id/Controls_tilt"
+	                android:layout_width="0dp"
+	                android:layout_height="wrap_content"
+	                android:layout_weight=".5"
+	                android:text="Tilt" />
+	            
+	            <ToggleButton
+	                android:id="@+id/Controls_onscreen"
+	                android:layout_width="0dp"
+	                android:layout_height="wrap_content"
+	                android:layout_weight=".5"
+	                android:text="On Screen" />
+            
+            
+            </LinearLayout>
+            
+        </LinearLayout>
+
+</LinearLayout>
